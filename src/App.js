@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { resetHistory } from 'sinon';
 
 import Timer from './Timer'
 
@@ -12,7 +13,10 @@ class App extends Component {
 
   //Your code here:
 
-
+componentDidMount() {
+  this.handleAddTimer()
+  
+}
 
 
 
